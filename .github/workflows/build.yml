@@ -53,3 +53,9 @@ jobs:
         with:
           name: debug-apk
           path: dist/Auto.js/inrt/build/outputs/apk/debug/
+          
+      - name: Download apk
+        uses: actions/download-artifact@v3
+        with:
+          name: debug-apk
+          path: dist/Auto.js/inrt/build/outputs/apk/debug/
